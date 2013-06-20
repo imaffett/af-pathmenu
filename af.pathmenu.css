@@ -99,27 +99,35 @@
 
 .pathbtn:nth-child(1).open{
   -webkit-transform:translate3d(0px,-120px,0);
+  transform:translate3d(0px,-120px,0);
 }
 
 .pathbtn:nth-child(2).open{
   -webkit-transform:translate3d(40px,-100px,0);
   -webkit-transition-delay:30ms:
+  transform:translate3d(40px,-100px,0);
+  transition-delay:30ms:
 }
 
 .pathbtn:nth-child(3).open{
   -webkit-transform:translate3d(80px,-75px,0);
   -webkit-transition-delay:60ms;
+  transform:translate3d(80px,-75px,0);
+  transition-delay:60ms;
 }
 
 .pathbtn:nth-child(4).open{
-
   -webkit-transform:translate3d(110px,-40px,0);
   -webkit-transition-delay:90ms;
+  transform:translate3d(110px,-40px,0);
+  transition-delay:90ms;
 }
 
 .pathbtn:nth-child(5).open{
   -webkit-transform:translate3d(130px,0px,0);
   -webkit-transition-delay:120ms;
+  transform:translate3d(130px,0px,0);
+  transition-delay:120ms;
 }
 
 .pathbtn a::after {

@@ -1,9 +1,9 @@
 /**
- * jq.pathmenu.js
- * @author appMobi
- * @copyright appMobi
+ * af.pathmenu.js
+ * @author Ian Maffett
+ * @copyright Ian Maffett
 
- * @desc a jqMobi plugin for creating path style menu's.
+ * @desc App Framework plugin for creating path style menu's.
   Your HTML needs to be a <ul> with <li> as the items (up to 5)
  
   <ul id='pathmenu'>
@@ -22,23 +22,22 @@
       button - text to show in the button
  */
 
-;
 (function($){
 
 	$.fn.pathmenu=function(opts){
-		if(this.length==0) return;
-		 new pathmenu(this[0],opts);
-		 return this;
-	}
+		if(this.length===0) return;
+            new pathmenu(this[0],opts);
+        return this;
+    };
 
 	var pathmenu=function(el,opts){
 		this.container=$(el);
 		opts.btnclass=opts.btnclass||"pathbtn";
 		opts.menubtnclass=opts.menubtnclass||"pathmenubutton";
-		opts.button=opts.button||"!"
+		opts.button=opts.button||"!";
         var self=this;
-        
-       
+
+
         //subscribe for the destroy event to prevent memory leaks
         this.container.bind('destroy', function(){
 			self.container.off("click");
@@ -47,7 +46,7 @@
 		this.container.find("li").addClass(opts.btnclass);
         //Add the actual button
         this.container.addClass("pathcircle");
-		this.container.append("<li class='"+opts.menubtnclass+"'><div><a>"+opts.button+"</a></div></li>")
+		this.container.append("<li class='"+opts.menubtnclass+"'><div><a>"+opts.button+"</a></div></li>");
 
         //Handle clicking the links
         this.container.on("click","."+opts.btnclass,function(){
@@ -66,4 +65,4 @@
                 btns.addClass("open"),$(this).addClass("open");
         });
 	};
-})(jq)
+})(af)

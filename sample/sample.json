@@ -1,0 +1,12 @@
+{
+	"sample": {
+		"title": "Path Menu",
+		"description": "",
+		"parameters": [{
+			"name": "text",
+			"description": "Text which will be displayed in the button",
+			"type": "text",
+			"value": "{!}"
+		}]		
+	}
+}

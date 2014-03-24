@@ -1,7 +1,7 @@
 {
     "name": "af-pathmenu",
     "title": "Path Menu",
-    "version": "0.1",
+    "version": "0.2",
     "author": "Ian Maffett <ian.maffett@gmail.com>",
     "license": "MIT X11",
     "description": "This plugin implements a Path style menu",
